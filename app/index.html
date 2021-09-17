@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="app/css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+  <div class="header__content">
+    <div class="header__menu">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link link--deliver" href="#">адрес и время доставки</a>
+              <a class="menu__link link--tel" href="#">горячая линия 24/7</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link--info" href="#">доставка</a>
+              <a class="menu__link--info" href="#">о нас</a>
+              <a class="menu__link--info" href="#">новости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="логотип">
+              <p class="logo__text">фрешок
+                <span class="logo__span">онлайн-маркет</span>
+              </p>
+            </a>
+          </div>
+          <button class="catalog__btn">Каталог продуктов
+            <span></span>
+          </button>
+          <form class="header__search" action="#">
+            <input class="search__input" placeholder="Найти в магазине ..." type="text">
+            <button class="input__btn" type="submit">ПОИСК</button>
+          </form>
+          <div class="header__navigation">
+            <a class="header__link" href="#">
+              <img class="navigation__image" src="images/registration.svg" alt="">
+            </a>
+            <a class="header__link" href="#">
+              <img class="navigation__image" src="images/favorites.svg" alt="">
+            </a>
+            <button class="navigation__btn">
+              <img class="navigation__image" src="images/bascket.svg" alt="">
+            </button>
+          </div>
+        </div>
+    </header>
+  </div>
 
 
 
-
-  
 </html>
