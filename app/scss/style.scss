@@ -18,7 +18,7 @@
 
 .menu__list {
   @extend %flex;
-  
+
 }
 
 .menu__link {
@@ -267,4 +267,42 @@
   color: $white;
   background-color: $green-900;
   border-radius: 6px;
+}
+
+.bottom {
+  background-color: $silver-100;
+}
+
+.bottom__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px 100px;
+}
+
+.bottom__item {
+  background-repeat: no-repeat;
+  background-position: 10px 40px;
+  padding: 54px 0 54px 74px;
+}
+
+.bottom__title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: $dark-900;
+  
+}
+
+.bottom__text {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  color: $dark-500;
+}
+
+.bottom__text span {
+  display: block;
 }
