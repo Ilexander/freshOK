@@ -2,6 +2,269 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'reset';
 
 
-@import 'media'
+@import 'media';
+
+
+
+.header__menu {
+  background-color: $dark-800;
+  color: $white;
+  font-weight: 700;
+  padding: 15px 0
+}
+
+.menu__list {
+  @extend %flex;
+  
+}
+
+.menu__link {
+  padding-left: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.menu__link:not(:last-child) {
+  margin-right: 48px;
+}
+
+.link--deliver,
+.link--tel {
+  width: 40px;
+  height: 50px;
+  position: relative;
+
+}
+
+.link--deliver::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: -3px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../images/deliver.svg');
+}
+
+.link--tel::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  left: 10px;
+  top: -3px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../images/telephone.svg');
+}
+
+.menu__link--info:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header {
+  background-color: $green-900;
+}
+
+.header__inner {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-right: 26px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__text {
+  font-family: 'Ruda';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: $white;
+  margin-left: 15px;
+}
+
+.logo__span {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.catalog__btn {
+  position: relative;
+  max-width: 240px;
+  width: 100%;
+  padding: 15px 0;
+  color: $green-900;
+  font-weight: 600;
+  background-color: $white;
+  border-radius: 6px;
+  margin-right: 30px;
+}
+
+.catalog__btn::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  right: 30px;
+  top: 23px;
+  background-image: url('../images/arrow-down.svg');
+}
+
+.catalog__btn span {
+  position: absolute;
+  background-color: $green-900;
+  left: 17px;
+  bottom: 50%;
+  width: 20px;
+  height: 1px;
+}
+
+.catalog__btn span::before,
+.catalog__btn span::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background-color: $green-900;
+}
+
+.catalog__btn span::before {
+  top: 8px;
+  left: 0;
+}
+
+.catalog__btn span::after {
+  top: -8px;
+  left: 0;
+}
+
+.header__search {
+  display: flex;
+  max-width: 575px;
+  width: 100%;
+  position: relative;
+  margin-right: 54px;
+}
+
+.header__search::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  left: 14px;
+  background-repeat: no-repeat;
+  background-image: url('../images/icon-search.svg');
+}
+
+.search__input {
+  max-width: 430px;
+  width: 100%;
+  padding: 15px 50px;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  border: none;
+}
+
+.search__input::placeholder {
+  font-family: 'Open Sans';
+  color: $dark-900;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input__btn {
+  border-radius: 0 6px 6px 0px;
+  width: 157px;
+  padding: 15px 0;
+  background-color: $dark-800;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.header__link {
+  margin-right: 27px;
+}
+
+.slick__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 60px;
+  z-index: 5;
+}
+
+.slick-next {
+  right: 60px;
+}
+
+.slider__item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 1290px;
+  width: 100%;
+  padding: 24px 24px;
+  border-radius: 6px;
+}
+
+.preview__title {
+  display: block;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 78px;
+  color: $dark-500;
+  margin-bottom: 12px;
+}
+
+.preview__title span {
+  display: block;
+}
+
+.preview__subtitle {
+  display: block;
+  color: $red-900;
+}
+
+.preview__text {
+  color: $dark-500;
+  line-height: 22px;
+  margin-bottom: 32px;
+
+}
+
+.preview__link {
+  padding: 12px 24px;
+  letter-spacing: 0.03em;
+  color: $white;
+  background-color: $green-900;
+  border-radius: 6px;
+}
