@@ -36,6 +36,15 @@
 
 @font-face {
   font-family: 'Ruda';
+  src: url('../fonts/Ruda/Ruda-Black.woff')format('woff'),
+  url('../fonts/Ruda/Ruda-Black.woff2')format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruda';
   src: url('../fonts/Ruda/Ruda-Bold.woff')format('woff'),
   url('../fonts/Ruda/Ruda-Bold.woff2')format('woff2');
   font-weight: 700;
