@@ -306,3 +306,143 @@
 .bottom__text span {
   display: block;
 }
+
+.services__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 30px;
+}
+
+.services__filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.services__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.services__category {
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $dark-500;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: border-color .2s;
+}
+
+.services__category:hover {
+  border-color: $green-200;
+}
+
+.services__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 7px;
+}
+
+.services__image img {
+  margin-bottom: 9px;
+}
+
+.services__image-title {
+  text-align: left;
+  margin-left: 18px;
+  text-transform: none;
+  margin-bottom: 50px;
+  max-width: 264px;
+}
+
+.services__sale {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 700;
+  width: fit-content;
+  padding: 0 6px;
+  letter-spacing: 0.03em;
+  color: $white;
+  margin: 10px 12px;
+  border-radius: 6px;
+}
+
+.sale--new {
+  background-color: $green-900;
+  top: 10px;
+  left: 10px;
+}
+
+.sale--discount {
+  background-color: $red-900;
+  top: 37px;
+  left: 10px;
+}
+
+.sale--hit {
+  background-color: $orange-900;
+}
+
+.services__link-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__favorites {
+  min-height: 68px;
+  margin-right: 12px;
+}
+
+.price__purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.price__sale {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  color: $silver-600;
+  position: relative;
+  width: fit-content;
+}
+
+.price__sale::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 45px;
+  height: 1px;
+  transform: rotate(-14deg);
+  background-color: $silver-600;
+}
+
+.price__btn {
+  margin-right: 18px;
+}
+
+
+.services__btn{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  padding: 12px 24px;
+  color: $green-900;
+  border: 1px solid $green-900;
+  border-radius: 6px;
+  transition: background-color .2s;
+}
+
+.services__btn:hover {
+  background-color: $green-200;
+}
