@@ -42,9 +42,49 @@
               </p>
             </a>
           </div>
-          <button class="catalog__btn">Каталог продуктов
-            <span></span>
-          </button>
+          <nav class="catalog">
+            <button class="catalog__btn">Каталог продуктов
+              <span></span>
+            </button>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Овощи и фрукты</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Бакалея</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Молочные продукты</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Хлеб</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Мясо</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Колбаса</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Рыба</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Алкоголь</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Напитки</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Торты</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Мясо</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Чай, кофе</a>
+              </li>
+            </ul>
+          </nav>
           <form class="header__search" action="#">
             <input class="search__input" placeholder="Найти в магазине ..." type="text">
             <button class="input__btn" type="submit">ПОИСК</button>
@@ -142,24 +182,24 @@
         <h3 class="title ">Топовые товары</h3>
         <ul class="services__filter">
           <li class="services__item">
-            <button class="services__category">Все товары</button>
+            <button class="services__category" data-filter="all">Все товары</button>
           </li>
           <li class="services__item">
-            <button class="services__category">Фрукты</button>
+            <button class="services__category" data-filter=".category-fruits">Фрукты</button>
           </li>
           <li class="services__item">
-            <button class="services__category">овощи</button>
+            <button class="services__category" data-filter=".category-greens">овощи</button>
           </li>
           <li class="services__item">
-            <button class="services__category">Напитки</button>
+            <button class="services__category" data-filter=".category-drinks">Напитки</button>
           </li>
           <li class="services__item">
-            <button class="services__category">Бакалея</button>
+            <button class="services__category" data-filter=".category-grocery">Бакалея</button>
           </li>
         </ul>
         <ul class="services__images">
-          <li class="services__image">
-            <div class="services__link-inner">
+          <li class="services__image mix category-fruits">
+            <div class="services__link-inner ">
               <div class="services__items">
                 <p class="services__sale sale--new">Новинка</p>
                 <p class="services__sale sale--discount">-50%</p>
@@ -178,7 +218,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-fruits">
             <div class="services__link-inner">
               <div class="services__items">
               </div>
@@ -195,7 +235,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-fruits">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--hit">Хит</p>
@@ -213,7 +253,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-greens">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--new">Новинка</p>
@@ -231,7 +271,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-greens">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--hit">Хит</p>
@@ -249,7 +289,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-drinks">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--discount">-30%</p>
@@ -269,7 +309,7 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-drinks">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--new">Новинка</p>
@@ -287,7 +327,155 @@
               <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
             </div>
           </li>
-          <li class="services__image">
+          <li class="services__image mix category-grocery">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--new">Новинка</p>
+                <p class="services__sale sale--discount">-50%</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/ketchup.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Кетчуп томатный детский органический Bio-Zentrale 500мл</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">600 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-fruits">
+            <div class="services__link-inner ">
+              <div class="services__items">
+                <p class="services__sale sale--new">Новинка</p>
+                <p class="services__sale sale--discount">-50%</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/pineapple.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Ананас, 1кг</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__sale">1999 ₽ </p>
+                <p class="price__text">999 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-fruits">
+            <div class="services__link-inner">
+              <div class="services__items">
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/lemon.jpg" alt="">
+              <h4 class="services__image-title">Лимон, 1кг</h4>
+            </a>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">199 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-fruits">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--hit">Хит</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/dragon-fruit.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Питахайя красная с белой мякотью, 1шт</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">1019 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-greens">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--new">Новинка</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/paprik .jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Перец оранжевый, 1кг</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">349 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-greens">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--hit">Хит</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/carrot.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Морковь молодая с бабушкиной грядки, 1кгг</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">49 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-drinks">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--discount">-30%</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/goods/juice.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+              безалкогольн...</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__sale">299 ₽ </p>
+                <p class="price__text">199 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-drinks">
+            <div class="services__link-inner">
+              <div class="services__items">
+                <p class="services__sale sale--new">Новинка</p>
+              </div>
+              <button class="services__favorites"><img src="images/heart.svg" alt=""></button>
+            </div>
+            <a class="services__link" href="#">
+              <img src="images/rofl.jpg" alt="">
+            </a>
+            <h4 class="services__image-title">Курс по вёрстке от 0 до 1, старт 23 августа</h4>
+            <div class="price__purchase">
+              <div class="price__cost">
+                <p class="price__text">877 ₽ </p>
+              </div>
+              <button class="price__btn"><img src="images/cart-btn.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="services__image image--hidden mix category-grocery">
             <div class="services__link-inner">
               <div class="services__items">
                 <p class="services__sale sale--new">Новинка</p>
@@ -307,11 +495,13 @@
             </div>
           </li>
         </ul>
-        <button class="services__btn">Показать еще</button>
+        <button id="loadMore" class="services__btn">Показать еще</button>
       </div>
     </section>
   </main>
-
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 
 </html>
