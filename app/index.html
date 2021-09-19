@@ -99,8 +99,41 @@
             <button class="navigation__btn">
               <img class="navigation__image" src="images/bascket.svg" alt="">
             </button>
+            <div class="header__basket">
+              <div class="basket__inner">
+                <div class="basket__item">
+                  <p class="basket__text">
+                    Корзина
+                  </p>
+                  <button class="clear__btn">очистить корзину</button>
+                </div>
+                <button class="basket__close-btn"></button>
+              </div>
+              <div class="basket__goods">
+                <ul class="goods__items">
+                  <li class="goods__item">
+                    <div class="goods__inner">
+                      <div class="goods__info">
+                        <img class="goods__img" src="images/basketgoods/pineapple.jpg" alt="">
+                        <p class="goods__name">
+                          Ананас, 1 кг
+                          <span class="goods__cost">999₽ </span>
+                        </p>
+                      </div>
+                      <div class="goods__buy">
+                        <button class="plus__btn"></button>
+                        <p class="goods__number">10</p>
+                        <button class="minus__btn"></button>
+                        <p class="goods__price">2038₽ </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </header>
 
     <div class="preview">
@@ -499,7 +532,7 @@
       </div>
     </section>
   </main>
-  
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
