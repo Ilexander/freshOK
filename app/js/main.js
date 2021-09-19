@@ -12,12 +12,20 @@ $(function () {
     $('.services__image').removeClass('image--hidden')
   });
 
+  $('.basket__close-btn').on('click', function () {
+    $('.header__basket').removeClass('header__basket--active')
+  });
+
   $('.catalog__btn').on('click', function () {
     $('.catalog__list').toggleClass('catalog__list--active')
   });
 
   $('.catalog__btn').on('click', function () {
     $('.catalog__btn').toggleClass('catalog__btn--active')
+  });
+
+  $('.navigation__btn').on('click', function () {
+    $('.header__basket').toggleClass('header__basket--active')
   });
 
   $('.services__image').slice(0, 4).show();

@@ -130,16 +130,18 @@
   right: 30px;
   top: 23px;
   background-image: url('../images/arrow-down.svg');
-  transition: transform .1s, top .1s, right .1s;
+  transition: top .1s;
 }
 
 .catalog__btn--active::after {
+  position: absolute;
   transform: rotate(180deg);
+  right: 32px;
   top: 16px;
-  right: 33px;
 }
 
 .catalog__btn--active {
+  position: relative;
   background-color: $green-200;
 }
 
@@ -292,6 +294,219 @@
 
 .header__link {
   margin-right: 27px;
+}
+
+.header__basket {
+  display: none;
+  
+}
+
+.header__basket--active {
+  display: block;
+  z-index: 5;
+  max-width: 475px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.basket__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px 12px 24px;
+  background-color: $white;
+  border-bottom: 1px solid rgba(193, 193, 193, 0.3);
+}
+
+.basket__text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 12px;
+}
+
+.clear__btn {
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.basket__close-btn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.basket__close-btn::before,
+.basket__close-btn::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: $dark-800;
+}
+
+.basket__close-btn::after {
+  transform: rotate(45deg);
+}
+
+.basket__close-btn::before {
+  transform: rotate(-45deg);
+}
+
+.basket__goods {
+  
+  height: calc(100vh - 224px);
+  padding: 12px 0 0 0;
+  background-color: $silver-100;
+}
+
+.basket__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+  background-color: $white;
+}
+
+.basket__order {
+  max-width: 475px;
+  width: 100%;
+  background-color: $green-900;
+  color: $white;
+  padding: 22px 161px;
+}
+
+.goods__name {
+  font-weight: 600;
+  max-width: 170px;
+  margin-left: 32px;
+}
+
+.goods__cost {
+  margin-top: 5px;
+  font-size: 20px;
+  color: $dark-500;
+  display: block;
+}
+
+.plus__btn,
+.minus__btn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: $green-900;
+}
+
+.plus__btn::before,
+.plus__btn::after {
+  content: '';
+  position: absolute;
+  background-color: $white;
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 18%;
+  right: 0%;
+  border-radius: 1px;
+
+}
+
+.goods__info {
+  display: flex;
+}
+
+.goods__price {
+  color: $dark-500;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.plus__btn::after {
+  transform: rotate(90deg);
+}
+
+.minus__btn::before {
+  content: '';
+  position: absolute;
+  background-color: $white;
+  width: 16px;
+  height: 2px;
+  top: 48%;
+  left: 18%;
+  right: 0%;
+  border-radius: 1px;
+}
+
+.goods__item {
+  padding: 12px 12px;
+  display: block;
+  max-width: 452px;
+  background-color: $white;
+  margin: 0 auto;
+  border: 1px solid $silver-600;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.goods__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods__buy {
+  max-width: 155px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.goods__buy-price {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.goods__delete-btn {
+  width: 12px;
+  height: 12px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.goods__delete-btn::before,
+.goods__delete-btn::after {
+  content: '';
+  position: absolute;
+  background-color: $silver-600;
+  width: 12px;
+  height: 1px;
+  top: 0px;
+  right: 0;
+  right: 0%;
+  border-radius: 1px;
+
+}
+
+.goods__delete-btn::after {
+  transform: rotate(-45deg);
+}
+
+.goods__delete-btn::before {
+  transform: rotate(45deg);
+}
+
+.goods__number {
+  text-align: center;
+  max-width: 36px;
+  width: 100%;
+  padding: 2.5px 0;
+  background-color: $green-200;
 }
 
 .slick__btn {
