@@ -67,7 +67,7 @@ $(function () {
   // }
 
 
-  $('.services__category').on('click', function () {
+  $('.category__btn').on('click', function () {
     $('.services__image').removeClass('image--hidden')
   });
 
@@ -89,11 +89,11 @@ $(function () {
     $('body').toggleClass('body--active')
   });
 
-  $('.services__image').slice(0, 4).show();
-  $('#loadMore').on('click', function (e) {
-    e.preventDefault();
-    $('.services__image:hidden').slice(0, 4).slideDown()
-  });
+  // $('.services__image').slice(0, 4).show();
+  // $('#loadMore').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.services__image:hidden').slice(0, 4).slideDown()
+  // });
 
 
   var mixer = mixitup('.services__images');
