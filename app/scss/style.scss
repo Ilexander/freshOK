@@ -39,7 +39,8 @@
 
 .link--deliver,
 .link--tel {
-  width: 40px;
+  max-width: 40px;
+  width: 100%;
   height: 50px;
   position: relative;
 
@@ -422,7 +423,8 @@
 
 .basket__close-btn {
   position: relative;
-  width: 25px;
+  max-width: 25px;
+  width: 100%;
   height: 25px;
   transition: background-color .2s;
 }
@@ -490,7 +492,8 @@
 .plus__btn,
 .minus__btn {
   position: relative;
-  width: 25px;
+  max-width: 25px;
+  width: 100%;
   height: 25px;
   background-color: $green-900;
 }
@@ -570,7 +573,8 @@
 }
 
 .goods__delete-btn {
-  width: 12px;
+  max-width: 12px;
+  width: 100%;
   height: 12px;
   top: 0;
   right: 0;
@@ -637,7 +641,7 @@
   border-radius: 6px;
 }
 
-.preview__title {
+.slider__title {
   display: block;
   margin: 0 auto;
   font-weight: 900;
@@ -647,16 +651,16 @@
   margin-bottom: 12px;
 }
 
-.preview__title span {
+.slider__title span {
   display: block;
 }
 
-.preview__subtitle {
+.slider__subtitle {
   display: block;
   color: $red-900;
 }
 
-.preview__text {
+.slider__text {
   color: $dark-500;
   line-height: 22px;
   margin-bottom: 32px;
@@ -722,7 +726,7 @@
   display: block;
 }
 
-.services__images {
+.services__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0px 30px;
@@ -735,11 +739,11 @@
   margin-bottom: 50px;
 }
 
-.services__item:not(:last-child) {
+.category__item:not(:last-child) {
   margin-right: 24px;
 }
 
-.services__category {
+.category__btn {
   font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.03em;
@@ -750,11 +754,11 @@
   transition: border-color .2s;
 }
 
-.services__category:hover {
+.category__btn:hover {
   border-color: $green-200;
 }
 
-.services__image {
+.services__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -763,16 +767,29 @@
   position: relative;
   margin-bottom: 30px;
   padding-bottom: 7px;
-  transition: transform .2s,;
+  transition: services__image .3s;
+  
 }
 
-.services__image:hover {
+.services__card:hover {
   transform: scale(1.050);
   border-color: $green-900;
 }
 
-.services__image img {
+.services__card img {
   margin-bottom: 9px;
+}
+
+.services__favorites-img path  {
+  transition: fill .2s, transform .2s;
+}
+
+.services__favorites-img:hover path  {
+  fill: $orange-900;
+}
+
+.services__favorites-img:active path  {
+  transform: scale(0.89);
 }
 
 .image--hidden {
@@ -976,6 +993,10 @@
   display: flex;
 }
 
-.footer__social-list:not(:last-child) {
+.footer__social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.footer__social-item:active {
+  opacity: 0.7;
 }
