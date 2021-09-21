@@ -399,8 +399,8 @@
               <div class="services__quantity">
                 <p class="services__sale sale--discount">-30%</p>
               </div>
-              <button class="services__favorites"><svg class="services__favorites-img" width="32" height="29" viewBox="0 0 32 29" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+              <button class="services__favorites"><svg class="services__favorites-img" width="32" height="29"
+                  viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                     fill="#C1C1C1" />
@@ -656,8 +656,302 @@
           </li>
         </ul>
         <button id="loadMore" class="services__btn">Показать еще</button>
+        <div class="services__offer">
+          <div class="services__offer-inner">
+            <div class="services__offer-item">
+              <img class="services__offer-img" src="images/fruits 1.jpg" alt="">
+              <h5 class="services__offer-title">
+                свежайшие фрукты
+                <p class="services__offer-text">
+                  НАЧНИ ФРУКТОВОЕ ЛЕТО
+                  <span>ВСЕГО От 99 ₽</span>
+                </p>
+              </h5>
+              <button class="services__offer-btn">
+                ПЕРЕЙТИ К ПОКУПКАМ
+              </button>
+            </div>
+            <div class="services__offer-item">
+              <img class="services__offer-img" src="images/fruits 2.jpg" alt="">
+              <h5 class="services__offer-title title--black">
+                СЕЗОННАЯ РАСПРОДАЖА
+                <p class="services__offer-text">
+                  ОВОЩЕПАД
+                  ДО -50%
+                </p>
+              </h5>
+              <button class="services__offer-btn">
+                ПЕРЕЙТИ К ПОКУПКАМ
+              </button>
+            </div>
+            <div class="services__offer-item">
+              <img class="services__offer-img" src="images/bread.jpg" alt="">
+              <h5 class="services__offer-title title--black">
+                свежайшие фрукты
+                <p class="services__offer-text">
+                  СВЕЖИЙ ХЛЕБЧИК
+                </p>
+              </h5>
+              <button class="services__offer-btn">
+                ПЕРЕЙТИ К ПОКУПКАМ
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="stock section">
+      <div class="container">
+        <h3 class="title">Акции</h3>
+        <ul class="stock__filter">
+          <li class="category__item">
+            <button class="stock__btn" data-filter="all">Все товары</button>
+          </li>
+          <li class="category__item">
+            <button class="stock__btn" data-filter="">НовИНКИ</button>
+          </li>
+          <li class="category__item">
+            <button class="stock__btn" data-filter="">ХИТЫ</button>
+          </li>
+        </ul>
+        <div class="stock__inner">
+          <ul class="stock__items">
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/pineapple.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Ананас, 1 кг
+                  </h4>
+                  <p class="stock__text-info" style="color: #63A60E;">В НАЛИЧИИ</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      999
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">1999
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.5</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/coffee.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Кофе с коноплей органический Caffé Salomoni 250г
+                  </h4>
+                  <p class="stock__text-info" style="color: #CF3E3B;">заканчивается</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      777
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">877
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.9 </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/strawberry.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Клубника, 1 кг
+                  </h4>
+                  <p class="stock__text-info" style="color: #C1C1C1;">нет в наличии</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      440
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">600 
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">5.0 </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/mango.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Манго, 1 шт
+                  </h4>
+                  <p class="stock__text-info" style="color: #63A60E;">В НАЛИЧИИ</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      660
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">960
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">5.0 </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/salmon.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Лосось, 1 кг
+                  </h4>
+                  <p class="stock__text-info" style="color: #63A60E;">В НАЛИЧИИ</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      999
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">1199
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.5 </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/juice.jpg" alt="">
+                  <p class="services__sale sale--hit section--stock">Хит</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Сок Granini овощной 100%, 0.5л
+                  </h4>
+                  <p class="stock__text-info" style="color: #CF3E3B;">заканчивается</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      180
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">230
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.9</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/basket.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Фруктовая корзина, 1 шт
+                  </h4>
+                  <p class="stock__text-info" style="color: #63A60E;">В НАЛИЧИИ</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      3990
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">5990
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.8</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="stock__item">
+              <div class="stock__item-inner">
+                <div class="stock__item-icon">
+                  <img class="stock__img" src="images/stcok/meat.jpg" alt="">
+                  <p class="services__sale sale--new section--stock">Новинка</p>
+                </div>
+                <div class="stock__info">
+                  <h4 class="stock__title">
+                    Свинина мякоть, 1 кг
+                  </h4>
+                  <p class="stock__text-info" style="color: #63A60E;">В НАЛИЧИИ</p>
+                  <div class="stock__price">
+                    <p class="stock__value">
+                      499
+                      <span class="stock__currency">₽</span>
+                    </p>
+                    <p class="stock__value-price">599
+                      <span>₽</span>
+                    </p>
+                    <p class="stock__raiting">4.6</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button id="loadMore" class="stock__btn-show">Показать еще</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container">
+        <ul class="brands__list">
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/Sprite.svg" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/dr-pepper.svg" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/Coca Cola.svg" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/pepsi.svg" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/redbull.svg" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/fanta.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer ">
