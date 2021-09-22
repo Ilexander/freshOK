@@ -1008,20 +1008,32 @@
 
 .services__offer {
   &-inner {
-    @extend %flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 30px;
     text-align: left;
   }
 
   &-item {
-    position: relative;
+
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    padding: 76px 90px 84px 32px;
+  }
+
+  .item--wight {
+    padding: 76px 130px 76px 25px;
   }
 
   &-img {
+    max-width: 300px;
     border-radius: 6px;
   }
 
   &-title {
-    position: absolute;
+    // position: absolute;
     text-align: left;
     font-size: 12px;
     line-height: 12px;
@@ -1043,8 +1055,9 @@
   }
 
   &-btn {
-    position: absolute;
+    // position: absolute;
     line-height: 14px;
+    font-weight: 700;
     color: $white;
     left: 26px;
     bottom: 76px;
@@ -1057,9 +1070,17 @@
     border-color: $white;
   }
 
+  .btn--black {
+    color: $dark-500;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn--black:hover {
+    border-color: $dark-500;
+  }
+
   .title--black {
     color: $dark-500;
-    max-width: 160px;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
   }
 }
@@ -1219,4 +1240,55 @@
     transform: scale(1.089);
     opacity: 1;
   }
+}
+
+.news {
+  padding-bottom: 72px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 6px;
+    max-width: 410px;
+    width: 100%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+
+  &__img {
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  &__date {
+    max-width: 76px;
+    width: 100%;
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: $white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0px 0px 6px 6px;
+  }
+
+  &__date span {
+    display: block;
+    font-family: 'Ruda';
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 18px;
+    font-weight: 600;
+  }
+}
+
+.title--left {
+  text-align: left;
 }
