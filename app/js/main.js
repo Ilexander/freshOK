@@ -1,11 +1,20 @@
 $(function () {
-  $('.preview__slider').slick({
+  $('.slider__preview').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick__btn slick-prev"><img src="images/prevarrow.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__btn slick-next"><img src="images/nextarrow.svg" alt=""></button>',
-    autoplay: true
+    // autoplay: true,
+
+    responsive: [{
+        breakpoint: 971,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
+      },
+    ]
   });
 
   // const priceBtn = document.querySelectorAll('.price__btn');
@@ -71,20 +80,36 @@ $(function () {
     $('.services__card').removeClass('image--hidden')
   });
 
-  $('.basket__close-btn').on('click', function () {
+  $('.menu__btn').on('click', function () {
+    $('.slide__menu').toggleClass('slide__menu--active')
+    $('body').toggleClass('body--active')
+  });
+
+  $('.slide__close').on('click', function () {
+    $('.slide__menu').removeClass('slide__menu--active')
+    $('body').removeClass('body--active')
+  });
+
+  $('.basket__close').on('click', function () {
     $('.header__basket').removeClass('header__basket--active')
-     $('body').removeClass('body--active')
+    $('body').removeClass('body--active')
   });
 
-  $('.catalog__btn').on('click', function () {
-    $('.catalog__list').toggleClass('catalog__list--active')
+  $('.header__catalog-btn').on('click', function () {
+    $('.header__catalog-list').toggleClass('header__catalog-list--active')
   });
 
-  $('.catalog__btn').on('click', function () {
-    $('.catalog__btn').toggleClass('catalog__btn--active')
+  $('.search__btn').on('click', function () {
+    $('.header__form').toggleClass('header__form--active')
+    $('.header__search').toggleClass('header__search--active')
+    $('.header__input-btn').toggleClass('header__input-btn--active')
   });
 
-  $('.navigation__btn').on('click', function () {
+  $('.header__catalog-btn').on('click', function () {
+    $('.header__catalog-btn').toggleClass('header__catalog-btn--active')
+  });
+
+  $('.header__button').on('click', function () {
     $('.header__basket').toggleClass('header__basket--active')
     $('body').toggleClass('body--active')
   });
@@ -96,5 +121,5 @@ $(function () {
   });
 
 
-  var mixer = mixitup('.services__items');
+  var mixer = mixitup('.services__cards');
 })
