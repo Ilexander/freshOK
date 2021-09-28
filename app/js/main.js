@@ -17,64 +17,6 @@ $(function () {
     ]
   });
 
-  // const priceBtn = document.querySelectorAll('.price__btn');
-  // const servicesImages = document.querySelector('.services__images');
-  // const navigationBtn = document.querySelector('.navigation__btn');
-  // const basket__bottom = document.querySelector('.basket__bottom');
-  // const basket__price = document.querySelector('.basket__price');
-
-  // let price = 0;
-
-  // const randomId = () => {
-  //   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-  // };
-
-  // const priceWithoutSpaces = (str) => {
-  //   return str.replace(/\s/g, '');
-  // };
-
-  // const normalPrice = (str) => {
-  //   return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
-  // };
-
-  // const generateCartProduct = (img, title, price, id) => {
-  //   return `
-  //   < li class = "services__image mix category-fruits" data-id = "${id}">
-  //     <
-  //     div class = "services__link-inner " >
-  //     <
-  //     div class = "services__items" >
-  //     <
-  //     p class = "services__sale sale--new" > Новинка < /p> <
-  //     p class = "services__sale sale--discount" > -50 % < /p> <
-  //     /div> <
-  //     button class = "services__favorites" > < img src = "images/heart.svg"
-  //   alt = "" > < /button> <
-  //     /div> <
-  //     a class = "services__link"
-  //   href = "#" >
-  //     <
-  //     img src = "${img}"
-  //   alt = "" >
-  //     <
-  //     /a> <
-  //     h4 class = "services__image-title" >${title}< /h4> <
-  //     div class = "price__purchase" >
-  //     <
-  //     div class = "price__cost" >
-  //     <
-  //     p class = "price__sale" > ${price}₽ < /p> <
-  //     p class = "price__text" > ${price}₽ < /p> <
-  //     /div> <
-  //     button class = "price__btn" > < img src = "images/cart-btn.svg"
-  //   alt = "" > < /button> <
-  //     /div> <
-  //     /li> 
-
-
-  //   `;
-  // }
-
 
   $('.category__btn').on('click', function () {
     $('.services__card').removeClass('image--hidden')
@@ -102,7 +44,7 @@ $(function () {
   $('.search__btn').on('click', function () {
     $('.header__form').toggleClass('header__form--active')
     $('.header__search').toggleClass('header__search--active')
-    $('.header__input-btn').toggleClass('header__input-btn--active')
+    $('.header__btn').toggleClass('header__btn--active')
   });
 
   $('.header__catalog-btn').on('click', function () {
@@ -122,4 +64,6 @@ $(function () {
 
 
   var mixer = mixitup('.services__cards');
+
+  var mixer = mixitup('.stock__items');
 })
