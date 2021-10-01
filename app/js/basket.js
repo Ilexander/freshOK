@@ -98,7 +98,7 @@ productsBtn.forEach(el => {
 
 cartProductsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('goods__delete')) {
-    deleteProducts(e.target.closest('.basket__wrapper'));
+    deleteProducts(e.target.closest('.basket__item'));
   }
 });
 
