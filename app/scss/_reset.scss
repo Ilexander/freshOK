@@ -1,3 +1,5 @@
+  @import 'vars';
+
 html {
   box-sizing: border-box;
 }
@@ -51,6 +53,7 @@ select {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: inherit;
 }
 
@@ -64,6 +67,9 @@ button {
   outline-color: transparent;
   border: none;
   cursor: pointer;
+  &:focus {
+    outline-color: $green-200;
+  }
 }
 
 .sr-only {

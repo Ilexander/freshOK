@@ -3,17 +3,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  background-color: white;
 }
 
-a {
-  text-transform: uppercase;
-}
-
-.body--active {
+.body-active {
   position: relative;
 }
 
-.body--active::before {
+.body-active::before {
   content: '';
   position: absolute;
   top: 0;
@@ -22,7 +19,11 @@ a {
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
   z-index: 5;
+}
 
+.logo {
+  max-width: 200px;
+  width: 100%;
 }
 
 .title {
@@ -50,10 +51,6 @@ a {
 }
 
 .line {
-  padding: 25px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-button:focus {
-  outline-color: $green-200;
 }
