@@ -26,6 +26,11 @@ body {
   width: 100%;
 }
 
+.title--left {
+  text-align: left;
+}
+
+
 .title {
   font-family: 'Ruda';
   font-weight: 600;
@@ -37,6 +42,28 @@ body {
 
 .title--margin {
   margin-bottom: 32px;
+}
+
+.showmore {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  padding: 12px 24px;
+  color: $green-900;
+  border: 1px solid $green-900;
+  border-radius: 6px;
+  transition: background-color 0.2s, box-shadow 0.1s;
+  margin-bottom: 72px;
+
+  &:focus {
+    outline-color: $green-200;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .section {
@@ -53,4 +80,23 @@ body {
 .line {
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  &:focus {
+    outline-color: $green-200;
+  }
 }
