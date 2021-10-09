@@ -21,8 +21,10 @@
     "sass": "^1.41.0"
   },
   "dependencies": {
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "mixitup": "^3.3.1",
+    "rangeslider-js": "^3.2.5",
     "slick-slider": "^1.8.2",
     "uuid": "^8.3.2"
   }
