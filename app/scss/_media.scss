@@ -142,7 +142,7 @@
       }
     }
 
-    &__menu-top {
+    &-menu__top {
       display: flex;
       justify-content: space-between;
       padding: 25px 25px 31px 16px;
@@ -779,17 +779,18 @@
       position: absolute;
       background-color: white;
       z-index: 11;
-      top: -100%;
       left: -15px;
+      transform: translateY(-200%);
       height: 100vh;
       padding: 90px 21px 16px 0;
       overflow: scroll;
-      transition: top 1.0s;
-
+      transition: transform 1.0s;
     }
 
     &__list-active {
-      top: -313px;
+      left: 0px;
+      position: fixed;
+      transform: translateY(-47%);
       border-radius: 0 0 6px 0px;
     }
 
