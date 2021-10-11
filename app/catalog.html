@@ -31,7 +31,8 @@
             </a>
             <div class="slide__contacts">
               <a class="slide__tel relations" href="tel:+7907288365">+7 907 288 365</a>
-              <a class="slide__maps relations" target="_blank" href="www.googlemaps.com">Санкт-Петербург, ул. Ленина, 1</a>
+              <a class="slide__maps relations" target="_blank" href="www.googlemaps.com">Санкт-Петербург, ул. Ленина,
+                1</a>
               <ul class="slide__list">
                 <li class="slide__item">
                   <a class="slide__link" href="#">
@@ -205,29 +206,27 @@
     </div>
   </header>
 
-  <div class="breadcrumps">
-    <div class="container">
-      <ul class="breadcrumps__list">
-        <li class="breadcrumps__item">
-          <a class="breadcrumps__link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumps__item">
-          <a class="breadcrumps__link" href="#">Каталог товаров</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
   <main>
+    <div class="breadcrumps">
+      <div class="container">
+        <ul class="breadcrumps__list">
+          <li class="breadcrumps__item">
+            <a class="breadcrumps__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumps__item">
+            <a class="breadcrumps__link" href="#">Каталог товаров</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="catalog section">
       <div class="container">
         <h2 class="title">Каталог товаров</h2>
         <div class="catalog__inner">
-          <button class="catalog__menu" style="background-image: url(images/catalog/open-filter.svg);"></button>
           <ul class="catalog__list">
-            <button class="catalog-menu__close"></button>
+            <button class="catalog__close"></button>
             <li class="catalog__item">
-              <button class="catalog__button catalog__button-category">Категории</button>
+              <button class="catalog__button catalog__button--category">Категории</button>
               <div class="catalog__links">
                 <a class="catalog__link" href="#">Овощи и фрукты</a>
                 <a class="catalog__link" href="#">Бакалея</a>
@@ -243,63 +242,63 @@
               </div>
             </li>
             <li class="catalog__item">
-              <button class="catalog__button catalog__button-offers">Предложения</button>
-              <form class="catalog__form catalog__form-offers" action="">
+              <button class="catalog__button catalog__button--offers">Предложения</button>
+              <form class="catalog__form catalog__form--offers" action="">
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-offers"></span>
+                  <span class="catalog__checkbox catalog__checkbox--offers"></span>
                   <span class="catalog__text">Со скидкой</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-offers"></span>
+                  <span class="catalog__checkbox catalog__checkbox--offers"></span>
                   <span class="catalog__text">Новинка</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-offers"></span>
+                  <span class="catalog__checkbox catalog__checkbox--offers"></span>
                   <span class="catalog__text">Хит</span>
                 </label>
               </form>
             </li>
             <li class="catalog__item">
-              <button class="catalog__button catalog__button-brands">Бренд</button>
-              <form class="catalog__form catalog__form-brands" action="">
+              <button class="catalog__button catalog__button--brands">Бренд</button>
+              <form class="catalog__form catalog__form--brands" action="">
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">CocaCola</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">Pepsi</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">Sprite</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">Fanta</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">RedBull</span>
                 </label>
                 <label class="catalog__label">
                   <input class="catalog__input" type="checkbox" style="width: 20px;">
-                  <span class="catalog__checkbox catalog__checkbox-brands"></span>
+                  <span class="catalog__checkbox catalog__checkbox--brands"></span>
                   <span class="catalog__text">Dr Pepper</span>
                 </label>
               </form>
             </li>
             <li class="catalog__item catalog__item-filters">
-              <button class="catalog__button catalog__button-cost">Цена</button>
-              <form class="catalog__form catalog__form-cost" action="">
+              <button class="catalog__button catalog__button--cost">Цена</button>
+              <form class="catalog__form catalog__form--cost" action="">
                 <label class="catalog-form__wrapper">
                   от
                   <span class="catalog-form__from"></span>
@@ -315,10 +314,11 @@
             </li>
           </ul>
           <ul class="catalog__sorts">
+            <button class="catalog__menu" style="background-image: url(images/catalog/open-filter.svg);"></button>
             <div class="catalog__buttons">
               <div class="catalog-buttons__name">
-                <button class="catalog__btn-name">По названию</button>
-                <ul class="catalog-btn__list-name">
+                <button class="catalog__btn--name">По названию</button>
+                <ul class="catalog-btn__list--name">
                   <li class="catalog-btn__item">
                     <button class="catalog-btn__sorting">По популярности</button>
                   </li>
@@ -334,8 +334,8 @@
                 </ul>
               </div>
               <div class="catalog-buttons__counter">
-                <button class="catalog__btn-counter">по 12</button>
-                <ul class="catalog-btn__list-counter">
+                <button class="catalog__btn--counter">по 12</button>
+                <ul class="catalog-btn__list--counter">
                   <li class="catalog-btn__item">
                     <button class="catalog-btn__sorting">по 18</button>
                   </li>
@@ -350,8 +350,8 @@
                   </li>
                 </ul>
               </div>
-              <button class="catalog__category"><svg class="catalog-category__flex" width="35" height="35"
-                  viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="catalog__category catalog__category--flex"><svg class="catalog-category__flex" width="35"
+                  height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M32.4 28H24.6C23.1641 28 22 28.6268 22 29.4V33.6C22 34.3732 23.1641 35 24.6 35H32.4C33.8359 35 35 34.3732 35 33.6V29.4C35 28.6268 33.8359 28 32.4 28Z"
                     fill="#C1C1C1" />
@@ -371,8 +371,9 @@
                     d="M10.4 0H2.6C1.16406 0 0 0.626801 0 1.4V5.6C0 6.3732 1.16406 7 2.6 7H10.4C11.8359 7 13 6.3732 13 5.6V1.4C13 0.626801 11.8359 0 10.4 0Z"
                     fill="#C1C1C1" />
                 </svg></button>
-              <button class="catalog__category"><svg class="catalog-category__grid catalog-category__grid-active"
-                  width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="catalog__category catalog__category--grid"><svg
+                  class="catalog-category__grid catalog-category__grid--active" width="36" height="34"
+                  viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.04444 26.4445H1.51111C0.676547 26.4445 0 27.121 0 27.9556V32.4889C0 33.3235 0.676547 34 1.51111 34H6.04444C6.87901 34 7.55556 33.3235 7.55556 32.4889V27.9556C7.55556 27.121 6.87901 26.4445 6.04444 26.4445Z"
                     fill="#C1C1C1" />
@@ -404,7 +405,7 @@
               </button>
             </div>
             <ul class="catalog__cards">
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -431,7 +432,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -458,7 +459,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -485,7 +486,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -512,7 +513,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -539,7 +540,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -566,7 +567,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -593,7 +594,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -620,7 +621,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -647,7 +648,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -674,7 +675,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -701,7 +702,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -728,7 +729,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -755,7 +756,7 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
+              <li class="services__card services__card--catalog mix category-fruits">
                 <div class="services__wrapper ">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
@@ -782,8 +783,8 @@
                   <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
                 </div>
               </li>
-              <li class="services__card services__card-catalog mix category-fruits">
-                <div class="services__wrapper ">
+              <li class="services__card services__card--catalog mix category-fruits">
+                <div class="services__wrapper">
                   <div class="services__quantity">
                     <p class="services__sale services__sale--new">Новинка</p>
                     <p class="services__sale services__sale--discount">-50%</p>
@@ -813,20 +814,20 @@
           </ul>
         </div>
         <div class="catalog__bottom">
-          <button id="loadMore" class="stock-btn__show showmore">Показать еще</button>
-  
+          <button id="loadMore" class="catalog__more showmore">Показать еще</button>
+
           <div class="pagination">
-            <a class="pagination__prew arrows" href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+            <a class="pagination__arrows prew" href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.216369 9.57138L9.22384 17.7799C9.51942 18.074 9.99879 18.074 10.2944 17.7799C10.5899 17.4859 10.5899 17.0087 10.2944 16.7147L1.83001 9.00047L10.2936 1.28631C10.5892 0.992226 10.5892 0.515087 10.2936 0.221029C9.99804 -0.0730267 9.51867 -0.0730267 9.22312 0.221029L0.21562 8.42958C0.0580805 8.58635 -0.00946155 8.79418 0.00106032 8.99972C-0.00873489 9.20603 0.0587852 9.41384 0.216369 9.57138Z"
                   fill="#505050" />
               </svg>
-  
+
             </a>
             <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagination__page pagination__page-active" href="#">1</a>
+              <li class="pagination__item active">
+                <a class="pagination__page" href="#">1</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__page" href="#">2</a>
@@ -841,7 +842,7 @@
                 <a class="pagination__page" href="#">10</a>
               </li>
             </ul>
-            <a class="pagination__next arrows" href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+            <a class="pagination__arrows next" href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10.7836 8.42911L1.77616 0.220559C1.48058 -0.0735196 1.00121 -0.0735196 0.705632 0.220559C0.410053 0.514615 0.410053 0.991755 0.705632 1.28583L9.16999 9.00002L0.706379 16.7142C0.4108 17.0083 0.4108 17.4854 0.706379 17.7795C1.00196 18.0735 1.48132 18.0735 1.77688 17.7795L10.7844 9.57091C10.9419 9.41414 11.0095 9.20631 10.9989 9.00077C11.0087 8.79446 10.9412 8.58665 10.7836 8.42911Z"
@@ -850,6 +851,32 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="adventage">
+      <div class="container">
+        <ul class="adventage__list">
+          <li class="adventage__item" style="background-image: url('images/scooter.svg');">
+            <p class="adventage__title">Бесплатная доставка
+            </p>
+            <p class="adventage__text">Для заказов на сумму от
+              500 ₽
+            </p>
+          </li>
+          <li class="adventage__item" style="background-image: url(images/return.svg);">
+            <p class="adventage__title">Возврат товара
+            </p>
+            <p class="adventage__text">Если товары были
+              испорчены
+            </p>
+          </li>
+          <li class="adventage__item" style="background-image: url(images/hour.svg);">
+            <p class="adventage__title">
+              Поддержка 24/7
+            </p>
+            <p class="adventage__text">Лучшие операторы</p>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
@@ -870,33 +897,33 @@
           </form>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="">О нас</a>
+              <a class="footer__link" href="#">О нас</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Контакты</a>
+              <a class="footer__link" href="#">Контакты</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Акции</a>
+              <a class="footer__link" href="#">Акции</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Отзывы</a>
+              <a class="footer__link" href="#">Отзывы</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Новости</a>
+              <a class="footer__link" href="#">Новости</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Публичная оферта</a>
+              <a class="footer__link" href="#">Публичная оферта</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Вакансии</a>
+              <a class="footer__link" href="#">Вакансии</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">Оплата и доставка</a>
+              <a class="footer__link" href="#">Оплата и доставка</a>
             </li>
           </ul>
           <div class="footer__contacts">
-            <a class="footer__tel" href="tel:+7907288365">Горячая линия+7 907 288 365</a>
-            <a class="footer__adress" target="_blank"
+            <a class="footer__tel footer__relations" href="tel:+7907288365">Горячая линия+7 907 288 365</a>
+            <a class="footer__adress footer__relations" target="_blank"
               href="https://www.google.com.ua/maps/place/Korpus+13,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A0%D0%B5%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0,+4,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4341236,30.6222713,17.5z/data=!4m5!3m4!1s0x40d4c5686523e81d:0x4057c6c781768662!8m2!3d50.4348208!4d30.6193672?hl=ru">Санкт-Петербург,
               ул. Ленина, 1</a>
             <ul class="footer__social">
