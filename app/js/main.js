@@ -34,6 +34,49 @@ $(function () {
     }, ]
   });
 
+  $(".product__raiting").rateYo({
+    rating: 4.6,
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    readOnly: true
+  });
+
+  $(".product__grade").rateYo({
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    readOnly: true
+  });
+
+  $(".product__mark").rateYo({
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+  });
+
+
+
+  $('.product__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="product__arrows product__arrows-prev"></button>',
+    nextArrow: '<button type="button" class="product__arrows product__arrows-next"></button>',
+    slidesToScroll: 1,
+    autoplay: true,
+  });
+
+  $('.interests__cards').slick({
+    infinite: true,
+    slidesToShow: 5,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="interests__arrows interests__arrows-prev"></button>',
+    nextArrow: '<button type="button" class="interests__arrows interests__arrows-next"></button>',
+    slidesToScroll: 1,
+    autoplay: true,
+  });
+
   $(".catalog-form__input").ionRangeSlider({
     type: "double",
     min: 0,
@@ -58,6 +101,36 @@ $(function () {
   $('.slide__btn').on('click', function () {
     $('.slide__menu').toggleClass('slide__menu-active')
     $('body').toggleClass('body-active')
+  });
+
+  $('.product__switch--desc').on('click', function () {
+    $('.product__switch--desc').addClass('product__switch--desc--active')
+    $('.product__switch--spec').removeClass('product__switch--spec--active')
+    $('.product__specification--desc').removeClass('product__specification--desc--hidden')
+    $('.product__specification--spec').removeClass('product__specification--spec--active')
+    $('.product__switch--reviews').removeClass('product__switch--reviews--active')
+    $('.product__specification--reviews').removeClass('product__specification--reviews--active')
+    $('.product__container').removeClass('product__container--reviews')
+  });
+
+  $('.product__switch--spec').on('click', function () {
+    $('.product__switch--spec').addClass('product__switch--spec--active')
+    $('.product__specification--spec').addClass('product__specification--spec--active')
+    $('.product__specification--desc').addClass('product__specification--desc--hidden')
+    $('.product__switch--reviews').removeClass('product__switch--reviews--active')
+    $('.product__switch--desc').removeClass('product__switch--desc--active')
+    $('.product__specification--reviews').removeClass('product__specification--reviews--active')
+    $('.product__container').removeClass('product__container--reviews')
+  });
+
+  $('.product__switch--reviews').on('click', function () {
+    $('.product__switch--reviews').addClass('product__switch--reviews--active')
+    $('.product__switch--desc').removeClass('product__switch--desc--active')
+    $('.product__switch--spec').removeClass('product__switch--spec--active')
+    $('.product__specification--spec').removeClass('product__specification--spec--active')
+    $('.product__specification--desc').addClass('product__specification--desc--hidden')
+    $('.product__specification--reviews').addClass('product__specification--reviews--active')
+    $('.product__container').addClass('product__container--reviews')
   });
 
   $('.catalog__button--cost').on('click', function () {
