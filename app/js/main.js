@@ -65,16 +65,34 @@ $(function () {
     nextArrow: '<button type="button" class="product__arrows product__arrows-next"></button>',
     slidesToScroll: 1,
     autoplay: true,
+
+    responsive: [{
+      breakpoint: 971,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+      }
+    }, ]
   });
 
   $('.interests__cards').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     variableWidth: true,
     prevArrow: '<button type="button" class="interests__arrows interests__arrows-prev"></button>',
     nextArrow: '<button type="button" class="interests__arrows interests__arrows-next"></button>',
     slidesToScroll: 1,
     autoplay: true,
+    dotsClass: 'slider-dots',
+
+    responsive: [{
+      breakpoint: 971,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+      }
+    }, ]
   });
 
   $(".catalog-form__input").ionRangeSlider({
@@ -110,6 +128,7 @@ $(function () {
     $('.product__specification--spec').removeClass('product__specification--spec--active')
     $('.product__switch--reviews').removeClass('product__switch--reviews--active')
     $('.product__specification--reviews').removeClass('product__specification--reviews--active')
+    $('.product__container').removeClass('product__container--spec')
     $('.product__container').removeClass('product__container--reviews')
   });
 
@@ -121,6 +140,7 @@ $(function () {
     $('.product__switch--desc').removeClass('product__switch--desc--active')
     $('.product__specification--reviews').removeClass('product__specification--reviews--active')
     $('.product__container').removeClass('product__container--reviews')
+    $('.product__container').addClass('product__container--spec')
   });
 
   $('.product__switch--reviews').on('click', function () {
@@ -130,6 +150,7 @@ $(function () {
     $('.product__specification--spec').removeClass('product__specification--spec--active')
     $('.product__specification--desc').addClass('product__specification--desc--hidden')
     $('.product__specification--reviews').addClass('product__specification--reviews--active')
+    $('.product__container').removeClass('product__container--spec')
     $('.product__container').addClass('product__container--reviews')
   });
 

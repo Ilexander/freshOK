@@ -50,6 +50,8 @@ body {
     border-radius: 3px;
     transition: border-color 0.2s;
 
+
+
     &:not(:first-child) {
       margin-left: 6px;
     }
@@ -59,10 +61,19 @@ body {
     }
   }
 
+  &__item--disabled {
+    border-color: transparent;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
   &__page {
     width: 48px;
     height: 48px;
     transition: background-color 0.2s;
+    padding: 11px;
   }
 
   &__arrows {

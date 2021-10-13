@@ -982,13 +982,15 @@
 
     &--catalog {
       margin: 0px;
-      max-width: 466px;
       transition: max-width 0.2s, padding 0.2s;
 
       &-active {
-        width: 466px;
         height: 162px;
         padding: 0 5px 5px 5px;
+
+        .services__wrapper {
+          padding-right: 352px;
+        }
 
         .services__link img {
           top: 0;
@@ -1121,6 +1123,7 @@
 
   &__favorites {
     margin-right: 12px;
+
   }
 
   &__purchase {
@@ -1160,6 +1163,11 @@
     background-color: $green-900;
     border-radius: 6px;
     transition: background-color 0.2s, transform 0.3s;
+
+    &--media {
+      display: none;
+    }
+
 
     &:hover {
       background-color: $green-1000;
@@ -1587,6 +1595,8 @@
     display: none;
   }
 
+
+
   .title {
     text-align: left;
     text-transform: none;
@@ -1610,6 +1620,14 @@
 
   &__sorts {
     margin-left: auto;
+  }
+
+  &-btn__sorting {
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__item {
@@ -1864,6 +1882,10 @@
     }
   }
 
+  &__list {
+    margin-right: 10px;
+  }
+
   &__button {
     position: relative;
     padding: 18px 156px 18px 18px;
@@ -2016,6 +2038,10 @@
   .title {
     text-align: left;
     margin-bottom: 18px;
+
+    &--media {
+      display: none;
+    }
   }
 
   .services__img:hover path {
@@ -2179,13 +2205,19 @@
       transform: translateX(-400%);
       opacity: 0;
       transition: opacity 0.3s,
-      transform 0.5s;
+        transform 0.5s;
+
       &--active {
 
         transform: translateX(-0%);
         opacity: 1;
       }
     }
+  }
+
+  &__span {
+    color: $dark-500;
+    font-weight: 400;
   }
 
   &-specification__text {
@@ -2200,9 +2232,6 @@
   }
 
   &-specification__item {
-    &--spec {
-      display: flex;
-    }
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -2221,6 +2250,7 @@
     &:not(:last-child) {
       border-bottom: 1px solid $silver-600;
     }
+
     &:last-child {
       margin-bottom: 72px;
     }
@@ -2324,7 +2354,11 @@
     transition: padding 0.5s;
 
     &--reviews {
-      padding-bottom: 1000px;
+      padding-bottom: 1130px;
+    }
+
+    &--spec {
+      padding-bottom: 340px;
     }
   }
 
@@ -2385,6 +2419,7 @@
     margin-bottom: 18px;
 
     &--text {
+      display: block;
       border-bottom: 1px solid $silver-600;
     }
 
@@ -2399,6 +2434,14 @@
       color: $dark-500;
       margin-left: 35px;
       margin-bottom: 13px;
+    }
+
+    &--title {
+      font-family: 'Ruda', sans-serif;
+      color: $dark-800;
+      font-weight: 600;
+      font-size: 18px;
+      padding-bottom: 18px;
     }
   }
 
@@ -2597,10 +2640,24 @@
       }
     }
   }
+
 }
+
+.fancybox-slide {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 
 .interests {
   padding-bottom: 46px;
+
+  .slider-dots .slick-active button {
+    background-color: $green-900;
+  }
+
+  .slider-dots {
+    bottom: -5px;
+  }
 
   .title {
     margin-bottom: 60px;
@@ -2709,10 +2766,6 @@
         left: 22px;
       }
     }
-  }
-
-  &__cards {
-    max-width: calc(100% + 30px);
   }
 }
 
