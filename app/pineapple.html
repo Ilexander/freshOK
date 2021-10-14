@@ -231,25 +231,39 @@
           <div class="product__photo">
             <ul class="product__slider">
               <li class="product__image">
-                <a href="images/goods/pineapple.jpg" data-fancybox="images" data-width="2048" data-height="1365">
+                <button class="product__btn">
                   <img class="product__img" src="images/goods/pineapple.jpg" alt="Ананас">
-                </a>
+                </button>
               </li>
               <li class="product__image">
-                <a href="images/goods/pineapple.jpg" data-fancybox="images" data-width="2048" data-height="1365">
+                <button class="product__btn">
                   <img class="product__img" src="images/goods/pineapple.jpg" alt="Ананас">
-                </a>
+                </button>
               </li>
               <li class="product__image">
-                <a href="images/goods/pineapple.jpg" data-fancybox="images" data-width="2048" data-height="1365">
+                <button class="product__btn">
                   <img class="product__img" src="images/goods/pineapple.jpg" alt="Ананас">
-                </a>
+                </button>
               </li>
             </ul>
+            <div class="popup">
+              <button class="popup__close"></button>
+              <ul class="popup__list">
+                <li class="popup__item">
+                  <img class="popup__img" src="images/goods/pineapple.jpg" alt="">
+                </li>
+                <li class="popup__item">
+                  <img class="popup__img" src="images/goods/pineapple.jpg" alt="">
+                </li>
+                <li class="popup__item">
+                  <img class="popup__img" src="images/goods/pineapple.jpg" alt="">
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="product__content">
             <h2 class="title">Питахайя красная с белой мякотью</h2>
-            <p class="services__sale services__sale--hit product__hit">Хит</p>
+            <p class="product__hit">Хит</p>
             <div class="product__wrapper product__wrapper--content">
               <p class="product__code">Код: 0111111</p>
               <div class="product__raiting" data-rating="2.5"></div>
@@ -265,9 +279,9 @@
                 <div class="value">1</div>
                 <button class="plus"></button>
               </div>
-              <button class="services__buy services__buy--media"><img src="images/cart-btn.svg" alt="корзина"></button>
+              <button class="product__buy"></button>
               <button class="product__purchase product__purchase--hidden">Добавить в корзину</button>
-              <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+              <button class="product__favorites"><svg class="product__img" id="favorites" width="32" height="29"
                   viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
@@ -332,39 +346,39 @@
           <div class="product__specification product__specification--reviews">
             <p class="product__comment">Мнения наших клиентов</p>
             <ul class="product-specification__list">
-              <li class="product-specification__author">
+              <li class="product__author">
                 <div class="product__user">
-                  <img class="product-user__img" src="images/product/noneavatar.jpg" alt="Фото профиля">
+                  <img class="product__avatar" src="images/product/noneavatar.jpg" alt="Фото профиля">
                   <p class="product__name">Андрей
                     <span class="product__date">10.06.2021</span>
                   </p>
                   <div class="product__grade" data-rateyo-rating="3.7"></div>
                 </div>
-                <p class="product-specification__сomment">Яркий цвет, нежный вкус. Очень свежий и приятный, буду
+                <p class="product__сomment">Яркий цвет, нежный вкус. Очень свежий и приятный, буду
                   пробовать
                   еще!))</p>
               </li>
-              <li class="product-specification__author">
+              <li class="product__author">
                 <div class="product__user">
-                  <img class="product-user__img" src="images/product/noneavatar.jpg" alt="Фото профиля">
+                  <img class="product__avatar" src="images/product/noneavatar.jpg" alt="Фото профиля">
                   <p class="product__name">Екатерина Белая
                     <span class="product__date">7.06.2021</span>
                   </p>
                   <div class="product__grade" data-rateyo-rating="5"></div>
                 </div>
-                <p class="product-specification__сomment">Цвет, конечно, очень насыщенный! Ожидаешь, что и вкус будет
+                <p class="product__сomment">Цвет, конечно, очень насыщенный! Ожидаешь, что и вкус будет
                   такой же яркий (просто взрыв), но нет. Вкус "сдержанно-сладкий" и очень-очень свежий! Рад, что есть
                   такая возможность - пробовать экзотические фрукты.</p>
               </li>
-              <li class="product-specification__author">
+              <li class="product__author">
                 <div class="product__user">
-                  <img class="product-user__img" src="images/product/noneavatar.jpg" alt="Фото профиля">
+                  <img class="product__avatar" src="images/product/noneavatar.jpg" alt="Фото профиля">
                   <p class="product__name">Екатерина Чёрная
                     <span class="product__date">17.06.2021</span>
                   </p>
                   <div class="product__grade" data-rateyo-rating="3"></div>
                 </div>
-                <p class="product-specification__сomment">Прикольно, вкусно, но у меня вопрос, почему в магазине одни
+                <p class="product__сomment">Прикольно, вкусно, но у меня вопрос, почему в магазине одни
                   ананасы??</p>
               </li>
             </ul>
@@ -447,139 +461,166 @@
         <div class="interests__inner">
           <h2 class="title">Вас может заинтересовать</h2>
           <ul class="interests__cards">
-            <li class="services__card services__card--catalog mix category-fruits">
-              <div class="services__wrapper ">
-                <div class="services__quantity">
-                  <p class="services__sale services__sale--new">Новинка</p>
-                  <p class="services__sale services__sale--discount">-50%</p>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
                 </div>
-                <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
                     viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                       fill="#C1C1C1" />
                   </svg></button>
               </div>
-              <a class="services__link" href="#">
+              <a class="interests__link" href="#">
                 <img src="images/goods/pineapple.jpg" alt="Ананас">
-                <p class="stock__text stock__text-catalog" style="color: #63A60E;">в наличии</p>
-                <h4 class="services__title">Ананас, 1кг</h4>
-                <p class="stock__raiting stock__raiting-catalog">5.0 </p>
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
               </a>
-              <div class="services__purchase">
-                <div class="services__cost">
-                  <p class="services__discount">1999 ₽ </p>
-                  <p class="services__text">999 ₽ </p>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
                 </div>
-                <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
+                <button class="interests__buy"></button>
               </div>
             </li>
-            <li class="services__card services__card--catalog mix category-fruits">
-              <div class="services__wrapper ">
-                <div class="services__quantity">
-                  <p class="services__sale services__sale--new">Новинка</p>
-                  <p class="services__sale services__sale--discount">-50%</p>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
                 </div>
-                <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
                     viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                       fill="#C1C1C1" />
                   </svg></button>
               </div>
-              <a class="services__link" href="#">
+              <a class="interests__link" href="#">
                 <img src="images/goods/pineapple.jpg" alt="Ананас">
-                <p class="stock__text stock__text-catalog" style="color: #63A60E;">в наличии</p>
-                <h4 class="services__title">Ананас, 1кг</h4>
-                <p class="stock__raiting stock__raiting-catalog">5.0 </p>
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
               </a>
-              <div class="services__purchase">
-                <div class="services__cost">
-                  <p class="services__discount">1999 ₽ </p>
-                  <p class="services__text">999 ₽ </p>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
                 </div>
-                <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
+                <button class="interests__buy"></button>
               </div>
             </li>
-            <li class="services__card services__card--catalog mix category-fruits">
-              <div class="services__wrapper ">
-                <div class="services__quantity">
-                  <p class="services__sale services__sale--new">Новинка</p>
-                  <p class="services__sale services__sale--discount">-50%</p>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
                 </div>
-                <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
                     viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                       fill="#C1C1C1" />
                   </svg></button>
               </div>
-              <a class="services__link" href="#">
+              <a class="interests__link" href="#">
                 <img src="images/goods/pineapple.jpg" alt="Ананас">
-                <p class="stock__text stock__text-catalog" style="color: #63A60E;">в наличии</p>
-                <h4 class="services__title">Ананас, 1кг</h4>
-                <p class="stock__raiting stock__raiting-catalog">5.0 </p>
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
               </a>
-              <div class="services__purchase">
-                <div class="services__cost">
-                  <p class="services__discount">1999 ₽ </p>
-                  <p class="services__text">999 ₽ </p>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
                 </div>
-                <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
+                <button class="interests__buy"></button>
               </div>
             </li>
-            <li class="services__card services__card--catalog mix category-fruits">
-              <div class="services__wrapper ">
-                <div class="services__quantity">
-                  <p class="services__sale services__sale--new">Новинка</p>
-                  <p class="services__sale services__sale--discount">-50%</p>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
                 </div>
-                <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
                     viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                       fill="#C1C1C1" />
                   </svg></button>
               </div>
-              <a class="services__link" href="pineapple.html">
+              <a class="interests__link" href="#">
                 <img src="images/goods/pineapple.jpg" alt="Ананас">
-                <p class="stock__text stock__text-catalog" style="color: #63A60E;">в наличии</p>
-                <h4 class="services__title">Ананас, 1кг</h4>
-                <p class="stock__raiting stock__raiting-catalog">5.0 </p>
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
               </a>
-              <div class="services__purchase">
-                <div class="services__cost">
-                  <p class="services__discount">1999 ₽ </p>
-                  <p class="services__text">999 ₽ </p>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
                 </div>
-                <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
+                <button class="interests__buy"></button>
               </div>
             </li>
-            <li class="services__card services__card--catalog mix category-fruits">
-              <div class="services__wrapper ">
-                <div class="services__quantity">
-                  <p class="services__sale services__sale--new">Новинка</p>
-                  <p class="services__sale services__sale--discount">-50%</p>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
                 </div>
-                <button class="services__favorites"><svg class="services__img" id="favorites" width="32" height="29"
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
                     viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
                       fill="#C1C1C1" />
                   </svg></button>
               </div>
-              <a class="services__link" href="#">
+              <a class="interests__link" href="#">
                 <img src="images/goods/pineapple.jpg" alt="Ананас">
-                <p class="stock__text stock__text-catalog" style="color: #63A60E;">в наличии</p>
-                <h4 class="services__title">Ананас, 1кг</h4>
-                <p class="stock__raiting stock__raiting-catalog">5.0 </p>
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
               </a>
-              <div class="services__purchase">
-                <div class="services__cost">
-                  <p class="services__discount">1999 ₽ </p>
-                  <p class="services__text">999 ₽ </p>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
                 </div>
-                <button class="services__buy"><img src="images/cart-btn.svg" alt="корзина"></button>
+                <button class="interests__buy"></button>
+              </div>
+            </li>
+            <li class="interests__card">
+              <div class="interests__wrapper ">
+                <div class="interests__quantity">
+                  <p class="interests__sale interests__sale--new">Новинка</p>
+                  <p class="interests__sale interests__sale--discount">-50%</p>
+                </div>
+                <button class="interests__favorites"><svg class="interests__img" id="favorites" width="32" height="29"
+                    viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.6653 2.77712C28.0869 0.98625 25.8974 0 23.5 0C20.1283 0 17.9936 2.01375 16.7966 3.70312C16.486 4.1415 16.2218 4.58106 16 4.99469C15.7782 4.58106 15.5141 4.1415 15.2034 3.70312C14.0064 2.01375 11.8717 0 8.5 0C6.10262 0 3.91306 0.986313 2.33469 2.77719C0.829188 4.48556 0 6.77356 0 9.21969C0 11.8824 1.03956 14.3589 3.27156 17.0134C5.26638 19.3859 8.13619 21.8314 11.4594 24.6632C12.6977 25.7185 13.9782 26.8098 15.3416 28.0026L15.3825 28.0384C15.5592 28.1932 15.7796 28.2705 16 28.2705C16.2204 28.2705 16.4408 28.1931 16.6175 28.0384L16.6584 28.0026C18.0217 26.8098 19.3023 25.7186 20.5408 24.6631C23.8638 21.8315 26.7336 19.386 28.7284 17.0134C30.9604 14.3589 32 11.8824 32 9.21969C32 6.77356 31.1708 4.48556 29.6653 2.77712ZM19.3246 23.2361C18.2571 24.1458 17.1584 25.0819 16 26.089C14.8416 25.0821 13.7429 24.1458 12.6753 23.236C6.17156 17.6939 1.875 14.0326 1.875 9.21969C1.875 7.23031 2.53781 5.38256 3.74137 4.01688C4.95875 2.63569 6.64869 1.875 8.5 1.875C11.0706 1.875 12.7323 3.45863 13.6735 4.78713C14.5178 5.97863 14.9584 7.17975 15.1086 7.64081C15.2343 8.02675 15.5941 8.28794 16 8.28794C16.4059 8.28794 16.7657 8.02675 16.8914 7.64081C17.0416 7.17975 17.4822 5.97863 18.3265 4.78706C19.2677 3.45863 20.9294 1.875 23.5 1.875C25.3513 1.875 27.0413 2.63569 28.2586 4.01688C29.4622 5.38256 30.125 7.23031 30.125 9.21969C30.125 14.0326 25.8284 17.6939 19.3246 23.2361Z"
+                      fill="#C1C1C1" />
+                  </svg></button>
+              </div>
+              <a class="interests__link" href="#">
+                <img src="images/goods/pineapple.jpg" alt="Ананас">
+                <p class="interests__availability" style="color: #63A60E;">в наличии</p>
+                <h4 class="interests__title">Ананас, 1кг</h4>
+                <p class="interests__raiting">5.0 </p>
+              </a>
+              <div class="interests__purchase">
+                <div class="interests__cost">
+                  <p class="interests__discount">1999 ₽ </p>
+                  <p class="interests__text">999 ₽ </p>
+                </div>
+                <button class="interests__buy"></button>
               </div>
             </li>
           </ul>

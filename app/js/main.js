@@ -75,6 +75,18 @@ $(function () {
     }, ]
   });
 
+  $('.popup__list').slick({
+    infinite: true,
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="popup__arrows popup__arrows-prev"></button>',
+    nextArrow: '<button type="button" class="popup__arrows popup__arrows-next"></button>',
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: true,
+    dotsClass: 'popup-dots',
+
+  });
+
   $('.interests__cards').slick({
     infinite: true,
     slidesToShow: 4,
@@ -119,6 +131,16 @@ $(function () {
   $('.slide__btn').on('click', function () {
     $('.slide__menu').toggleClass('slide__menu-active')
     $('body').toggleClass('body-active')
+  });
+
+  $('.product__btn').on('click', function () {
+    $('.popup').addClass('popup--active')
+    $('body').toggleClass('body--popup')
+  });
+
+  $('.popup__close').on('click', function () {
+    $('.popup').removeClass('popup--active')
+    $('body').removeClass('body--popup')
   });
 
   $('.product__switch--desc').on('click', function () {
